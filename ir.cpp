@@ -5,12 +5,16 @@
 using namespace pxt;
 typedef vector<Action> vA;
 
-enum class hicbit_Port {
-    port1 = 21,
-    port2 = 23,
-    port3 = 22,
-    port4 = 6
-}
+enum class hicbit_Port_IR { 
+  //% block="port 1"
+  port1 = 21,
+  //% block="port 2"
+  port2 = 23,
+  //% block="port 3"
+  port3 = 22,
+  //% block="Port 4"
+  port4 = 6
+};
 
 enum class RemoteButton {
     CH_MINUS = 0x45,
@@ -69,7 +73,7 @@ namespace IR {
   }
 
   //%
-  void init(Pins pin){
+  void init(hicbit_Port_IR pin){
     rx = new ReceiverIR((PinName)pin);
     tsb.start(); //interrupt timer for debounce
     create_fiber(monitorIR);
