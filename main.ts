@@ -1019,7 +1019,7 @@ namespace IR {
     //% blockGap=20 weight=90
     //% block="connect ir receiver to %pin"
     //% shim=IR::init
-    export function init(pin: Pins): void {
+    export function init(pin: hicbit_Port): void {
         return
     }
     

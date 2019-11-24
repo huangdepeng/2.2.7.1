@@ -44,8 +44,10 @@
 	"Sensor.Dht11Result.Fahrenheit|block":"温度（华氏度）",
 	"Sensor.Dht11Result.humidity|block":"湿度（百分比）",
 	"Sensor.hicbit_getDHT11value|block": "温湿度传感器DHT11 %port|获取 %dhtResult|",
-	"Sensor.init|block": "初始化红外遥控接收传感器|%pin|",
-	"Sensor.onPressEvent|block": "当红外接收到遥控器码|%btn|时",
+
+	"{id:category}IR": "Hicbit遥控",
+	"IR.init|block": "初始化红外遥控接收传感器|%pin|",
+	"IR.onPressEvent|block": "当红外接收到遥控器码|%btn|时",
 
 
 	"{id:category}Display": "Hicbit显示",
